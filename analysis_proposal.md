@@ -2,23 +2,9 @@
 
 Author: Valentina Peña
 
-## Introduction
+### Introduction
 
-The distinct isoforms expressed in vertebrate genes through alternative splicing can be important in an ecological context. For example, alternat$
-
-All datasets used in this study are publicly available. The raw RNA-seq data were downloaded from the Sequence Read Archive under BioProject ID P$
-
-### Pre-assembly quality control
-
-Raw data sequencing quality will be assessed using the short-read sequence inspection tool MultiQC. This tool creates a single HTML report with i$
-
-### De novo transcriptome assembly
-
-Following the approach of Herrera et al. (2022), transcriptome assembly will be performed using Trinity v2.15.2. One wild-caught replicate from e$
-
-### Transcript and isoform estimation
-
-To detect alternative splicing using RNA-seq data, MISO (Mixture of Isoforms) will quantify differential splicing of alternative exons (Katz et a$
+The distinct isoforms expressed in vertebrate genes through alternative splicing can be important in an ecological context. For example, alternative isoforms can lead to phenotypic changes amongst populations. In humans, the vast majority of genes are alternatively spliced, and most alternative exons show tissue-specific regulation (Wang et al., 2008). With advancements in sequencing technology and computational methods, we can conduct exploratory analyses to detect isoform enrichment and abundance. This project aims to quantify the levels of alternatively spliced genes and differentially regulated isoforms across two species of fish that underwent diet-switching experiments. 
 
 All datasets used in this study are publicly available. The raw RNA-seq data were downloaded from the Sequence Read Archive under BioProject ID PRJNA738880 (from Herrera et al., 2022), which includes wild-caught and lab-fed individuals of four closely related prickleback species (family Stichaeidae). For the analysis conducted here, I have downloaded a subset of the available data, specifically focusing on liver tissue for two species, Xiphister mucosus and Phytichthys chirus. Using sra-tools v3.0.0, each sample was identified by its unique SRR identifier and retrieved from the SRA database with the prefetch tool. The downloaded .sra files were split and converted to .fastq format using fasterq-dump, which organized paired-end reads. After extraction, the .fastq files were compressed to .fastq.gz format. The entire process was logged into standard output and standard error log files. 
 
